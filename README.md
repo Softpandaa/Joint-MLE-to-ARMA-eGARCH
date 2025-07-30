@@ -12,5 +12,6 @@ This repository contains a comprehensive R implementation for estimating ARMA(m,
 5. Performance Comparison: MSE and MAE metrics
 
 # ``arma_egarch_loglik`` Function:
-1. Initiate $\alpha$ 
-3. 
+1. Initiate $\hat{\phi}_{1:m}$, $\hat{\theta}_{1:n}$ by ARMA(m,n) estimation
+2. Initiate $(\omega, \alpha, \beta, \gamma)$ by EGARCH(1,1) estimation
+3. Set $\hat{\sigma}^2_{\tau}
