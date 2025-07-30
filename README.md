@@ -20,3 +20,9 @@ Financial time series exhibit complex dynamics, where returns often display an a
 1. Initiate `phi_hat[1:m]`, `theta_hat[1:n]` by ARMA(m,n) estimation  
 2. Initiate `(omega, alpha, beta, gamma)` by EGARCH(1,1) estimation  
 3. Set `sigma2_hat[tau]   = (1/T) * sum_{t=1}^T (r_t – r_bar)^2` and `epsilon_hat[tau]  = 0` for `tau = 0, 1, 2, …, max(m, n, 1)`
+
+# Reference:
+1. Francq, C., & Zakoïan, J. M. (2004). Maximum likelihood estimation of pure GARCH and ARMA-GARCH processes. Bernoulli, 10(4), 605-637.
+2. Chen, Y., Cheung, K. C., & Yam, S. C. P. (2024). Financial Data Analytics: with Machine Learning, Optimization and Statistics. Wiley Finance Series. John Wiley & Sons.
+3. Fiszeder, P. (2009). Parameter Estimation of ARMA Models with GARCH/APARCH Errors: An R and SPlus Software Implementation. Journal of Statistical Software, 55(3), 1-26.
+4. Nelson, D. B. (1991). Conditional Heteroskedasticity in Asset Returns: A New Approach. Econometrica, 59(2), 347-370.
