@@ -1,4 +1,4 @@
-# Joint-MLE-of-ARIMA-GARCH
+# Joint-MLE-of-ARMA-GARCH
 This repository contains a comprehensive R implementation for estimating ARMA(m,n)-EGARCH(1,1) models using different approaches. The project compares two-step estimation, joint MLE, and built-in methods for fitting ARMA(3,2)-EGARCH(1,1) models.
 
 # Motivation
