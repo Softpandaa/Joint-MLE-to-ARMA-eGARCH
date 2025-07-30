@@ -18,11 +18,4 @@ This repository contains a comprehensive R implementation for estimating ARMA(m,
 # ``arma_egarch_loglik`` Function:
 1. Initiate `phi_hat[1:m]`, `theta_hat[1:n]` by ARMA(m,n) estimation  
 2. Initiate `(omega, alpha, beta, gamma)` by EGARCH(1,1) estimation  
-3. Set  
-   ```text
-   sigma2_hat[tau]   = (1/T) * sum_{t=1}^T (r_t – r_bar)^2  
-   epsilon_hat[tau]  = 0
-   
-1. Initiate $\hat{\phi}_{1:m}$, $\hat{\theta}_{1:n}$ by ARMA(m,n) estimation
-2. Initiate $(\omega, \alpha, \beta, \gamma)$ by EGARCH(1,1) estimation
-3. Set $\hat{\sigma}^2_{\tau} = \frac{1}{T}\sum_{t=1}^T (r_t-\bar{r})^2$ and $\hat{\varepsilon}_{tau}=0$ where $\tau=0,1,2, ..., max(m,n,1)+1$
+3. Set `sigma2_hat[tau]   = (1/T) * sum_{t=1}^T (r_t – r_bar)^2` and `epsilon_hat[tau]  = 0` for `tau = 0, 1, 2, …, max(m, n, 1) + 1`
